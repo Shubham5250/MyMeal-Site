@@ -9,9 +9,62 @@
     </title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        @media(feColorMatrix)
+        
+        @media (max-width: 998px) {
+            .services{
+                display: block;
+            }
+            #home{
+                height: 190px;
+            }
+            #services-container{
+                margin: 77px;
+                margin-top: 194px;
+            }
+            .searchbox {
+                width: 423px;
+                height: 23px;
+                padding: 12px;
+                margin-top: 21px;
+                font-size: 17px;
+            }
+            .navbar{
+                height: 47px;
+            }
+            #logo img{
+                height: 47px;
+                width: initial;
+                margin-left: 0px;
+            }
+            #home h1 {
+                font-size: 2rem;
+                margin-top: 186px;
+            }         
+            
+            #home p {
+                color: white;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }  
+        }
+        @media (max-width: 634px) {
+            .box{
+                margin-bottom: 30px;
+            }
+            .nav-activities li a{
+                font-size: 16px;
+            }
+            .log-btn a{
+                font-size: 16px;
+            }
+            .sign-up-btn a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width:583px){
+            
+        }
     </style>
-
 </head>
 <body>
     <nav class="navbar">
@@ -27,8 +80,8 @@
         </div>
         <div id="user-account">
             <ul class="log-sign">
-                <button class="log-btn">Log in</button>
-                <button class="sign-up-btn">Sign Up</button>
+                <button class="log-btn"><a>Log in</a></button>
+                <button class="sign-up-btn"><a>Sign Up</a></button>
             </ul>
         </div>
     </nav>
@@ -52,7 +105,7 @@
                 <h2>Food Catering</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eaque rem cum dolore necessitatibus ea, magnam et ad dolor est expedita, minus pariatur consequatur! Hic tenetur aliquid, ipsam veritatis perferendis et dicta molestias veniam provident, accusantium officiis numquam possimus fugiat.</p>
             </div>
-            <div id="box3" class="box">
+            <div id="box3" class="box"          >
                 <img src="images/3.png" alt="">
                 <h2>Bulk Ordering</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ut labore enim cum fugit, iste voluptate dolorem nam eaque dicta temporibus magnam est quos tenetur sint architecto! Unde, fugit deserunt. Laboriosam, non accusamus?</p>
