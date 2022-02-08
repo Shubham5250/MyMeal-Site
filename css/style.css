@@ -32,7 +32,7 @@ html{
 #home::before{
     content: "";
     position: absolute;
-    background: url(/images/bckg.jpg) no-repeat center center/cover ;
+    background: url(/images/bckg-min.jpg) no-repeat center center/cover ;
     height: 100% ;
     width: 100%;
     z-index: -1;
@@ -254,7 +254,7 @@ option{
 }
 #contact-us{
     height: 100vh;
-    background: url(/images/pexels-oleg-magni-1040499.jpg);
+    background: url(/images/pexels-oleg-magni-1040499-min.jpg);
     background-position: center;
     background-size: cover;
 }
