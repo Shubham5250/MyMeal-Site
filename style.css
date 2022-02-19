@@ -156,7 +156,7 @@ html{
 #place{
     padding: 10px;
     margin-top: 29px;
-    height: 48px;
+    height: 47px;
     border-bottom:2px solid black ;
     /* bor */
 }
@@ -497,4 +497,101 @@ footer{
     border: 1px solid aqua;
     box-shadow: 2px 2px 2px aqua;
     transform: scale(1.05);
+}
+
+@media only screen and (max-width:950px){
+    
+    #india {
+        margin-right: 15px;
+
+    }
+    #uk {
+        margin-right: 15px;
+
+    }
+    #australia img{
+        height: 300px;
+    }
+    #uk img{
+        height: 300px;
+    }
+    #india img{
+        height: 300px;
+    }
+    .box{
+        height: 250px;
+    }
+    #box1 img{
+        height: 50px;
+    }
+    #box1 h2{
+        margin: 0;
+    }
+    #box2 h2{
+        margin: 0;
+    }
+    #box3 h2{
+        margin: 0;
+    }
+    #box2 img{
+        height: 50px;
+    }
+    #box3 img{
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 845px) {
+    #box1 img{
+        height: 36px;
+    }
+    #box1 h2{
+        font-size: 18px;
+    }
+    #box1 p{
+        font-size: 15px;
+    }
+    #box2 img{
+        height: 36px;
+    }
+    #box2 h2{
+        font-size: 18px;
+    }
+    #box1 p{
+        font-size: 15px;
+    }
+    #box3 img{
+        height: 36px;
+    }
+    #box3 h2{
+        font-size: 18px;
+    }
+    #box1 p{
+        font-size: 15px;
+    }
+    .services{
+        width: 795px;
+    }
+    .order-place{
+        width: 525px;
+        height: ;
+    }
+    #home h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .services{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 66%;
+
+    }
+    body{
+        width: 800px;
+    }
 }
