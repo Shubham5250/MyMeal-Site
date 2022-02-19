@@ -28,12 +28,14 @@ html{
     flex-direction: column;
     height: 170px;
     justify-content: center;
-    align-items: center; ;
+    align-items: center; 
 }
-#home::before{
+ #home::before{
     content: "";
-    position: absolute;
-    background: url(/images/backggg.jpg) no-repeat center center/cover;    
+    position: absolute;   
+    background: url(backggg.jpg); 
+    background-position: center;
+    background-size: cover;
     height: 100% ;
     width: 100%;
     z-index: -1;
@@ -136,7 +138,7 @@ html{
     align-items: center;
     flex-direction: column;
     border: 2px solid rgb(83, 83, 83);
-    background-color: rgb(247, 245, 221);
+    background-color: rgb(230, 251, 255);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -258,7 +260,8 @@ option{
 }
 #contact-us{
     height: 100vh;
-    background: url(/images/contactbckg.jpg);
+    background: url(contactbckg.jpg);
+    width: 100%;
     background-position: center;
     background-size: cover;
 }
