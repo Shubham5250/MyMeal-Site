@@ -6,47 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Online Food Delivery Service | MyMeal.com
-    </title>
+    </title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Signika:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-       
+    
+         
 </head>
 <body>
-    <nav class="navbar" >
-        <div id="logo">
-            <img src="weblogo..png" alt="">
-        </div>
-        <div id="nav-contents">
-            <ul class="nav-activities">
-                <li><a href="#services-container">Services</a></li>
-                <li><a href="#cities">Cities</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
-            </ul>
-        </div>
-        <div id="user-account">
+    <div class="sidemenu">
+        <div id="mainbox"  onclick="openFunction()">
+            &#9776;
             <ul class="log-sign">
-                <button class="log-btn"><a>Log in</a></button>
-                <button class="sign-up-btn"><a>Sign Up</a></button>
+                    <button class="log-btn"><a>Log in</a></button>
+                    <button class="sign-up-btn"><a>Sign Up</a></button>
             </ul>
         </div>
-    </nav>
+        <div id="menu" class="responsive-navbar" style="width: 222px;"><i class="fa" style="font-size: 27px;" onclick="closeFunction()">&#xf00d;</i>
+            <div class="dashboard">
+               <img src="weblogo..png" alt=""> 
+               <h1>Dashboard</h1>
+               
+            </div>
+            
+            <ul class="activities">
+                    <li><a href="#services-container">Services</a></li>
+                    <li><a href="#cities">Cities</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#global">Global Reach</a></li>
+            </ul>
+        </div>
+        <nav class="navbar" >
+            <div id="logo">
+                <img src="weblogo..png" alt=""> 
+                
+            </div>
+            <div id="nav-contents">
+                <ul class="nav-activities">
+                    <li><a href="#services-container">Services</a></li>
+                    <li><a href="#cities">Cities</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+            </div>
+            <div id="user-account">
+                
+            </div>
+        </nav>
+    </div>
+    
     <section id="home">
-        <h1>Welcome to MyMeal</h1>
+        <h1>Welcome to <i>MyMeal</i></h1>
         <p>Get your favourite food & drinks now!</p>
         <div class="order-place">
             <div class="select-city">
                 <!-- <label for="city">Your city:</label> -->
                 <select name="mycity" id="place">
-                    <option value="Vadodara" selected>Vadodara</option>
-                    <option value="Ahmednagar">Ahmednagar</option>
-                    <option value="Nagpur">Nagpur</option>
-                    <option value="Rajkot">Rajkot</option>
-                    <option value="Indore">Indore</option>
-                    <option value="Ranchi">Ranchi</option>
-                    <option value="Raigad">Raigad</option>
-                    <option value="Nashik">Nashik</option>
+                    <option value="Vadodara" class="locations" selected >Vadodara</option>
+                    <option value="Ahmednagar" class="locations">Ahmednagar</option>
+                    <option value="Nagpur" class="locations">Nagpur</option>
+                    <option value="Rajkot" class="locations">Rajkot</option>
+                    <option value="Indore" class="locations">Indore</option>
+                    <option value="Ranchi" class="locations">Ranchi</option>
+                    <option value="Raigad" class="locations">Raigad</option>
+                    <option value="Nashik" class="locations">Nashik</option>
                 </select>
             </div>
-            <input type="searchbox" class="searchbox" placeholder="Search for restaurant, cuisine or a dish" >
+
+            <input type="searchbox" class="searchbox" id="search-place" placeholder="Search for restaurant, cuisine or a dish">
+            
             <!-- <button class="order-btn">Order Now</button> -->
         </div>
     </section>
@@ -137,7 +166,7 @@
                 <li><a href="">Yavatmal</a></li>
             </ul>
         </div><hr>
-        <div class="global-reach">
+        <div id="global" class="global-reach">
             <h1>We are spread  globally in</h1>
             <div class="countries">
 
@@ -202,12 +231,12 @@
                     </div>
                 </div>
                 <div class="company-contact-info">
-                    <h3>Address</h3>
-                    <p>G-1, Brighton Street , <br>LA-30002 , USA.</p>
-                    <h3>Call us </h3>
-                    <p>+18000343536</p>
-                    <h3>General Support</h3>
-                    <p>mymealsupport@gmail.com</p>  
+                    <h3>Address</h3><br>
+                    <p>G-1, Brighton Street , <br>LA-30002 , USA.</p><br>
+                    <h3>Call us </h3><br>
+                    <p>+18000343536</p><br>
+                    <h3>General Support</h3><br>
+                    <p>mymealsupport@gmail.com</p><br>  
                     <div class="social-icons">
                         <img src="NicePng_facebook-logo-png-transparent_238077.png" alt=""class="fb">
                         <img src="NicePng_instagram-png-logo_41867.png" alt="">
@@ -281,5 +310,15 @@
             <p>@ 2021-22 myMeal.com &copy; All Rights Reserved</p>
         </div>
     </footer>
+    <script>
+        function openFunction(){
+            document.getElementById("menu").style.width="300px";
+        
+        }
+        function closeFunction(){
+            document.getElementById("menu").style.width="0px";
+            document.getElementById("mainbox").style.marginLeft="15px"
+        }
+    </script>
 </body>
 </html>

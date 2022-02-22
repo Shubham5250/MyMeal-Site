@@ -1,8 +1,14 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    
+*{
+    margin: 0;
 }
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -18,6 +24,7 @@ html{
     position: absolute;
     top: 0px;
     left: 0px;
+    right: 0;
     height: 100% ;
     width: 100%;
     z-index: -1;
@@ -26,7 +33,7 @@ html{
 #home{
     display: flex;
     flex-direction: column;
-    height: 170px;
+    height: 147px;
     justify-content: center;
     align-items: center; 
 }
@@ -44,6 +51,7 @@ html{
 #home h1{
     color: #fffffff8;
     font-size: 3rem;
+    font-family: 'Poppins';
     border: 2px solid rgb(255, 255, 255);
     border-right: none;
     border-left: none;
@@ -53,6 +61,7 @@ html{
 #home p{
     color: white;
     font-size: 1.5rem;
+    font-family: 'Poppins';
     margin-bottom: 8px;
 }
 #logo{
@@ -83,6 +92,7 @@ html{
 .nav-activities li a{
     color: white;
     font-weight: 500;
+    font-family: 'Poppins';
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -147,6 +157,15 @@ html{
 .box:hover{
     transform: scale(1.05);
 }
+.box h2{
+    font-family: 'Poppins';
+}
+.box p{
+    font-family: 'Poppins';
+}
+.h-primary{
+    font-family: 'Poppins'; 
+}
 .order-place{
     display: flex;
 }
@@ -156,7 +175,7 @@ html{
 #place{
     padding: 10px;
     margin-top: 29px;
-    height: 47px;
+    height: 38px;
     border-bottom:2px solid black ;
     /* bor */
 }
@@ -179,6 +198,7 @@ html{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    font-family: 'Poppins';
     font-weight: bold;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -194,11 +214,13 @@ html{
 .cities-container li a{
     text-decoration: none;
     color: rgb(96, 100, 100);
+    font-family: 'Poppins';
 }
 .h-primary-contact{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins';
 }
 .contact-form{
     display: flex;
@@ -290,7 +312,7 @@ option{
 .h-primary-contact h2{
     padding-top: 39px;
     color: rgb(255, 255, 255);
-    z-index: 1;
+    font-family: 'signika';
 
 }
 #india img{
@@ -317,6 +339,8 @@ option{
     display: flex;
     justify-content:center ;
     align-items: center;
+    font-family: 'poppins';
+    
 }
 
 
@@ -352,10 +376,20 @@ option{
     font-weight: 800;
     opacity: 0;
     transition: 0.5s;
+    font-family: 'signika';
+}
+#mainbox {
+    display: none;
+}
+.responsive-navbar{
+    display: none;
 }
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+}
+#search-place{
+    height: 21px;
 }
 .layer p{
     width: 100%;
@@ -364,6 +398,7 @@ option{
     bottom: 0px;
     color: #fff;
     font-size: 20px;
+    font-family: 'signika';
     font-weight: 400;
     opacity: 0;
     transition: 0.5s;
@@ -424,6 +459,7 @@ option{
 }
 .footer-header h3{
     color: white;
+    font-family: 'Poppins';
 }
 footer{
     background-color: #1a1919;
@@ -438,13 +474,13 @@ footer{
     justify-content: center;
     align-items: center; */
     padding-left: 29px;
-    color: white;
+    color: white;font-family: 'signika';
 }
 .company h3{
-    color: white;padding-left: 29px;
+    color: white;padding-left: 29px;font-family: 'signika';
 }
 .help h3{
-    color: white;padding-left: 29px;
+    color: white;padding-left: 29px;font-family: 'signika';
 }
 .partners ul{
     /* display: flex;
@@ -461,14 +497,14 @@ footer{
 }
 .partners li a{
     text-decoration: none;
-    color: rgb(165, 159, 159);
+    color: rgb(165, 159, 159);font-family: 'Poppins';
 }
 .company li a{
-    color: rgb(165, 159, 159);text-decoration: none;
+    color: rgb(165, 159, 159);text-decoration: none;font-family: 'Poppins';
 }
 .help li a{
     color: rgb(165, 159, 159);
-    text-decoration: none;
+    text-decoration: none;font-family: 'Poppins';
 }
 .company li {
     margin-bottom: 20px;
@@ -487,7 +523,7 @@ footer{
     margin-top: 54px;
 }
 .copyright p{
-    color: white;
+    color: white;font-family: 'Poppins';
 }
 
 .nav-activities li:hover{
@@ -522,7 +558,7 @@ footer{
         height: 250px;
     }
     #box1 img{
-        height: 50px;
+        height: 30px;
     }
     #box1 h2{
         margin: 0;
@@ -530,14 +566,23 @@ footer{
     #box2 h2{
         margin: 0;
     }
+    .box p{
+        font-size: 12px;
+    }
+    .box h2{
+        font-size: 17px;
+    }
     #box3 h2{
         margin: 0;
     }
     #box2 img{
-        height: 50px;
+        height: 30px;
     }
     #box3 img{
-        height: 50px;
+        height: 30px;
+    }
+    .layer{
+        height: 300px;
     }
 
 }
@@ -570,16 +615,16 @@ footer{
     #box1 p{
         font-size: 15px;
     }
+    .global-reach h1{
+        font-size: 20px;
+    }
     .services{
         width: 795px;
-    }
-    .order-place{
-        width: 525px;
-        height: ;
     }
     #home h1{
         font-size: 2rem;
     }
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -587,11 +632,578 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    #name{
+        border-color: #535353;
+        box-shadow: 2px 2px 3px white;
+    }
+    #email{
+        border-color: #535353;
+        box-shadow: 2px 2px 3px white;
+    }
+    #city{
+        border-color: #535353;
+        box-shadow: 2px 2px 3px white;
+    }
+    #feedback-space{
+        border-color: #535353;
+        box-shadow: 2px 2px 3px white;
+    }
     .box{
-        width: 66%;
+        width: 50%;
+    }
+    .h-primary-contact h2{
+        font-size: 25px;
+    }
+    #place{
+        height: 37px;
+    }
+    .searchbox{
+        height: 37px;
+    }
+    .select-city{
+        margin-top: 31px;
+    }
+}
+@media only screen and (max-width: 778px){
+    html,body{
+        overflow-x: hidden;
+    }
+    #services-container{
+        margin-top: 308px;
+    }
+    
+}
+@media only screen and (max-width:720px){
+    .form{
+        height: 480px;
+    }
+    .input-form{
+        width: 290px;
+    }
+    .layer h3{
+        font-size: 20px;
+    }
+    .layer p{
+        font-size: 16px;
+    }
+    .company-contact-info{
+        width: 215px;
+    }
+    #name{
+        width: 225px;
+    }
+    #email{
+        width: 225px;
+    }
+    #city{
+        width: 225px;
+    }
+    #feedback-space{
+        width: 225px;
+    }
+    .submit-contact button{
+        width: 110px;
+        height: 35px;
+        margin-left: 90px;
+    }
+}
+@media only screen and (max-width: 662px) {
+    .navbar{
+        display: none;
+    }
+    .responsive-navbar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 0px;
+        background-color: #222;
+        z-index: 1;
+        padding-top: 47px;
+        overflow: hidden; 
+        transition: all .5s;
+    }
+    .dashboard h1{
+        font-size: 22px;
+    }
+    .activities li a{
+        text-decoration: none;
+        color: rgb(187, 187, 187);
+        font-size: 22px;
+    }
+    .activities li{
+        list-style: none;
+        margin: 20px;
+    }
+    .responsive-navbar img{
+        height: 80px;
+        width: 80px;
+    }
+    .dashboard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard h1{
+        color:rgb(216, 212, 212);
+        font-family: 'Poppins';
+    }
+    .activities{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .fa{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+    .fa:hover{
+        color: #fff;
+        
+    }
+    .activities li a{
+        font-family: 'signika';
+    }
+    .activities li a:hover{
+        color: #ffffff;
+        border-bottom: 2px solid whitesmoke;
+    }
+    #mainbox{
+        display: flex;
+        font-size: 35px;
+        cursor: pointer;
+        margin: 5px 15px;
+        color: rgb(255, 255, 255);
+        transition: all .5s;
+    }
+    .sidemenu{
+        background-color: #222;
+        opacity: 0.95;
+        z-index: 1;
+    }
+    .countries{
+        z-index: -1;
+    }
+    .log-sign{
+        display: flex;
+        position: absolute ;
+        right: 15px;
+    }
+}
+@media only screen and (max-width: 648px){
+    .company-contact-info{
+        display: none;
+    }
+    .copyright p{
+        font-size: 11px;
+    }
+    .footer-header{
+        margin-bottom: 15px;
+        padding-top: 15px;
+    }
+    .footer-contents h3{
+        font-size: 15px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(128, 128, 129);
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    .footer-contents{
+        padding: 30px;
+    }
+    .partners{
+        margin-right: 15px;
+    }
+    .company{
+        margin-right: 15px;
+    }
+    .help{
+        margin-right: 15px;
+    }
+    .footer-contents li a{
+        font-size: 13px;
+    }
+    .countries{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .global-col{
+        height: 250px;
+        padding: 15px;
+    }
+    .layer{
+        height: 270px;
+        margin-top: 16px;
+        margin-left: 15px;
+        width: 90%;
+    }
+    .searchbox{
+        width: 322px;
+    }
+    .order-place{
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        height: 446px;
+    }
+    .input-form {
+        width: 244px;
+    }
+    .company-contact-info {
+        width: 190px;
+    }
+    #name {
+        width: 184px;
+        height: 30px;
+    }
+    #email {
+        width: 184px;height: 30px;
+    }
+    #city {
+        width: 184px;height: 30px;
+    }
+    #feedback-space {
+        width: 184px;
+    }
+    .submit-contact button{
+        width: 184px;
+        margin-left: 28px;
+        height: 40px;
+    }
+    .company-contact-info p{
+        font-size: 1.1rem;
+    }
+    .company-contact-info h3{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:549px) {
+    #home h1{
+        font-size: 1.5rem;
+    }
+    #home p{
+        font-size: 1.1rem;
+    }
+    #search-place::placeholder{
+        font-size: 13px;
+        font-family: 'poppins';
+    }
+    #place{
+        padding: 0;
+        height: 33px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        padding-left: 20px;
+    }
+    #search-place {
+        height: 16px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .searchbox{
+        width: 281px;
+    }
+    #services-container{
+        margin-top: 248px;
+    }
+    .box{
+        height: 180px;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+}
+@media only screen and (max-width:498px){
+    .global-col{
+        height: 206px;
+    }
+    #box1 p{
+        font-size: 12px;
+    }
+    #box1 {
+        padding: 5px;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+}
+@media only screen and (max-width:476px) {
+    .cities-container li a{
+        font-size: 12px;
+    }
+    .footer-contents li a{
+        font-size: 12px;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+}
+@media only screen and (max-width:448px) {
+    .searchbox{
+        width: 270px;
+    }
+    #place{
+        padding-left: 0;
+    }
+    .cities-header{
+        font-size: 1.1rem;
+    }
+    .countries{
+        padding: 0;
+    }
+    .global-reach h1{
+        padding-top: 15px;
+        font-size: 15px;
+    }
+    .services{
+        width: 603px;
+    }
+    .h-primary{
+        font-size: 20px;
+    }
+    #service-container{
+        margin-top: 222px;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+}
+@media only screen and (max-width:425px) {
+    .activities{
+        margin-top: 10px;
+    }
+    .layer{
+        margin-left: 15px;
+        width: 85%;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+}
+@media only screen and (max-width:400px) {
+    .form{
+        height: 383px;
+    }
+    .submit-contact button{
+        background-color: blueviolet;
+        border: none;
+        width: 243px;
+        margin-left: 1px;
+    }
+    .submit-contact button:hover{
+        border: none;
+        box-shadow: none;
+        background-color: rgb(156, 75, 231);
+    }
+    #search-place::placeholder{
+        font-size: 11px;
+    }
+    #search-place{
+        width: 241px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #place{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 80px;
+    }
+    .help{
+        margin-right: 0px;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+    @media only screen and (max-width:375px) {
+        #services-container{
+            margin-top: 222px;
+        }
+        .h-primary{
+            font-size: 16px;
+        }
+        #box1 h2{
+            font-size: 16px;
+        }
+        #box2 h2{
+            font-size: 16px;
+        }
+        #box3 h2{
+            font-size: 16px;
+        }
+    }
+    #box1{
+        margin: 6px;
+        padding: 13px;
+        height: 181px;
+        width: 40%;
+    }
+    #box2{
+        margin: 6px;
+        padding: 13px;
+        height: 218px;
+        width: 40%;
+    }
+    #box3{
+        margin: 6px;
+        padding: 13px;
+        height: 181px;
+        width: 40%;
+    }
+    .select-city option{
+        font-family: 'poppins';
+    }
+    .select-city select{
+        font-family: 'poppins';
+    }
+    #home h1{
+        font-size: 1.20rem;
+    }
+    #home p{
+        font-size: 0.9rem;
+    }
+   .order-place{
+       display: flex;
+       flex-direction: column;
+   }
+   .searchbox{
+       margin-top: 6px;
+   }
+   #search-place{
+       width: 291px;
+       border: none;
+       border-radius: 5px;
+   }
+   #place{
+        border: none;
+        margin-top: 0px;
+        width: 303px;
+        border-radius: 5px;
+   }
+   #home p{
+       margin-top: 8px;
+       margin-bottom: 4px;
+   }
+   .select-city{
+       margin-top: 15px;
+   }
+}
+@media only screen and (max-width:362px) {
+    
+   .select-city option{
+       font-family: 'poppins';
+   }
+   .select-city select{
+       font-family: 'poppins';
+   }
+   .footer-contents{
+       padding: 0px;
+   }
+   .cities-header{
+       font-size: 0.95rem;
+   }
+   .cities-container li a {
+    font-size: 10px;
+    }
+    #india img{
+        height: 183px;
+    }
+    #uk img{
+        height: 183px;
+    }
+    #australia img{
+        height: 183px;
+    }
+    .layer{
+        height: 183px;
+        width: 82%;
+    }
 
+}
+@media only screen and (max-width:320px){
+    #box1 h2{
+        font-size: 12px;
     }
-    body{
-        width: 800px;
+    #box2 h2{
+        font-size: 12px;
     }
+    #box3 h2{
+        font-size: 12px;
+    }
+    #box1 p{
+        font-size: 10px;
+    }
+    #box2 p{
+        font-size: 10px;
+    }
+    #box3 p{
+        font-size: 10px;
+    }
+    #box1{
+        padding: 4px;
+        height: 154px;
+    }
+    #box2{
+        padding: 4px;
+        height: 184px;
+    }
+    #box3{
+        padding: 4px;
+        height: 149px;
+    }
+    .footer-header h3{
+        font-size: 14px;
+    }
+    .partners h3 {
+        font-size: 13px;
+    }
+    .company h3{
+        font-size: 13px;
+    }
+    .help h3{
+        font-size: 13px;
+    }
+    .footer-contents li a{
+        font-size: 10px;
+    }
+    .copyright p{
+        font-size: 8px;
+    }
+    .h-primary-contact h2{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .dashboard{
+        justify-content: flex-start;
+    }
+    .activities{
+        align-items: flex-start;
+    }
+
 }
