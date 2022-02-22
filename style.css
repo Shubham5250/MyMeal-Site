@@ -227,6 +227,9 @@ html{
     justify-content: center;
     align-items:center ;
 }
+.account{
+    display: none;
+}
 .form{
     display: flex;
     border: 3px solid #000000;
@@ -711,6 +714,13 @@ footer{
     .navbar{
         display: none;
     }
+    .topmenu{
+        display: flex;
+        flex-direction: row;
+    }
+    .account{
+        display: block;
+    }
     .responsive-navbar{
         display: flex;
         flex-direction: column;
@@ -913,7 +923,7 @@ footer{
         width: 281px;
     }
     #services-container{
-        margin-top: 248px;
+        margin-top: 284px;
     }
     .box{
         height: 180px;
@@ -980,7 +990,7 @@ footer{
         font-size: 20px;
     }
     #service-container{
-        margin-top: 222px;
+        margin-top: 284px;
     }
     .select-city option{
         font-family: 'poppins';
@@ -1043,7 +1053,7 @@ footer{
     }
     @media only screen and (max-width:375px) {
         #services-container{
-            margin-top: 222px;
+            margin-top: 284px;
         }
         .h-primary{
             font-size: 16px;
